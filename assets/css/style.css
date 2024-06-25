@@ -43,7 +43,6 @@ body{
 }
 .exibe__produtos__cards{
     display: flex;
-    justify-content: first baseline ;
     flex-wrap: wrap;
     overflow-y: scroll;
     box-shadow: 10px 10px 1 var(--quarter-color)
@@ -66,31 +65,34 @@ body{
     border:none
 }
 .exibe__produtos__card__titulo {
-    margin:20px;
-    font-size: medium;
+    margin:20px 5px;
+    font-size: 1vw;
+    box-sizing: border-box;
     font-weight: lighter;
     text-align: left;
     width: 100%;
     font-weight: 100;
-    font-style: initial;
+    text-indent: 3px;
 }
 .exibe__produtos__card figcaption{
     font-size: small;
     position: relative;
     width: 100%;
+    font-size: 1vw;
+    white-space: inherit;
     padding: 10px;
 }
 .exibe__produtos__card figcaption img{
     position: absolute;
     right: 0;
     bottom: 5px;
-
 }
 .adiciona__produtos__formulairio{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding: 0 10px;
 }
 .adiciona__produtos__enviar{
     background-color: var(--secondary-color);
@@ -131,7 +133,41 @@ body{
     justify-content: center;
     align-items: center;
     height: 190px;
+    text-align: center;
     background-color: var(--primary-color);
     gap: 20px;
 }
 
+@media(max-width:768px){
+    *{
+        margin: 0%;
+    }
+    .adiciona__produtos__formulairio{
+        margin: 10px 50px;
+    }
+    .produtos{
+        display: flex;
+        flex-direction: column-reverse;
+    }.exibe__produtos{
+        padding-left: 40px;
+        width: 100%;
+    }
+    .exibe__produtos__cards{
+        margin-right: 0;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .exibe__produtos__card{
+        width: 45%;
+        flex-shrink: 0;
+    }
+    .exibe__produtos__card__img{
+        max-width: 100%;
+    }
+    .exibe__produtos__card__titulo, .exibe__produtos__card figcaption{
+        font-size: larger;
+    }
+}
