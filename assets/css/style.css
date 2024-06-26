@@ -97,6 +97,7 @@ body{
 .adiciona__produtos__enviar{
     background-color: var(--secondary-color);
     color: var(--third-color);
+    
 }
 .adiciona__produtos__formulairio input[type="text"] {
     width: 100%;
@@ -120,7 +121,7 @@ body{
     background-color: var(--secondary-color);
     font-family: "Press Start 2P", system-ui;
     border-radius: 20px;   
-    font-size: large;     
+    font-size: 2vh;     
 }
 .adiciona__produtos__limpar{
     color: var(--secondary-color);
