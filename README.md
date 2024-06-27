@@ -39,7 +39,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 4. **Inicie o servidor JSON na raiz:**
 
    ```bash
-   json-server --watch .\db_geeks.json 
+   json-server --watch db_geeks.json 
    ```
 
 5. **Execute o projeto:**
