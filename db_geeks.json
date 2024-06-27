@@ -1,3 +1,16 @@
 {
-  "produtos": []
+  "produtos": [
+    {
+      "id": "a8be",
+      "nome": "MINI ELLON",
+      "preco": "1 BI",
+      "imagem": "https://cdn.openart.ai/stable_diffusion/41fb737e999b137009c208a7b92a351aca168e4e_2000x2000.webp"
+    },
+    {
+      "id": "1e90",
+      "nome": "ZUCK",
+      "preco": "0.9 BI",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkvUQy6Pxbv6Bj0HpfAbqra5WBaBzfqwZwuQ&s"
+    }
+  ]
 }
