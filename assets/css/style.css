@@ -123,6 +123,9 @@ body{
     border-radius: 20px;   
     font-size: 2vh;     
 }
+.adiciona__produtos__botoes input, .adiciona__produtos__limpar, .excluir-produto{
+    cursor: pointer;
+}
 .adiciona__produtos__limpar{
     color: var(--secondary-color);
     background-color: var(--third-color);

@@ -1,16 +1,3 @@
 {
-  "produtos": [
-    {
-      "nome": "Super Man",
-      "preco": "10",
-      "imagem": "https://imgs.search.brave.com/slEz9pLmZ5EuHgLNNK9M0KNyFt3gidyOljYZ901dn2I/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hLXN0/YXRpYy5tbGNkbi5j/b20uYnIvODAweDU2/MC9ib25lY28tc3Vw/ZXJtYW4tY2xhc3Np/Y28tMzAtY20tZmln/dXJhLWRjLWNvbWlj/cy1zdW5ueS1zcGlu/LW1hc3Rlci9qYXBh/Y29sZWNpb25hdmVp/cy80MzM1cC9jOWM1/OWYyODZiNWU3MmJm/MGRmNWQ0MDg2MmUy/ZjM5Ny5qcGVn",
-      "id": "1"
-    },
-    {
-      "id": "3899",
-      "nome": "HOMEM DE FERRO",
-      "preco": "10",
-      "imagem": "https://imgs.search.brave.com/H9NaQ3mUx1wY6UPal7n-AxHlXrcvM0TLN3JjIXUmJY8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzUwL2Jm/L2IyLzUwYmZiMjgx/NThiMjY3MTA4Zjcw/MzM2ZGU2MWJjYjQ4/LmpwZw"
-    }
-  ]
+  "produtos": []
 }
