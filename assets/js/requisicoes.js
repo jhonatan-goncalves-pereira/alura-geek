@@ -10,15 +10,22 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const novoProduto = { nome, preco, imagem };
   
-      //adicionando localmente
       try {
-        let response = await fetch('db_geeks.json');
-        let data = await response.json();
-        data.produtos.push(novoProduto);
-        
-        // SIMULA o envio dos dados para o servidor
-        console.log('Produto adicionado:', novoProduto);
-        displayProducts(data.produtos);
+        // Requisição POST para adicionar um novo produto
+        const response = await fetch('http://localhost:3000/produtos', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(novoProduto)
+        });
+  
+        if (!response.ok) {
+          throw new Error(`Erro na requisição: ${response.status}`);
+        }
+  
+        // Atualiza a lista de produtos
+        fetchProducts();
       } catch (error) {
         console.error('Erro ao adicionar produto:', error);
       }
@@ -30,12 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
   async function fetchProducts() {
     try {
-      const response = await fetch('db_geeks.json');
+      const response = await fetch('http://localhost:3000/produtos');
       if (!response.ok) {
         throw new Error(`Erro na requisição: ${response.status}`);
       }
-      const data = await response.json();
-      displayProducts(data.produtos);
+      const produtos = await response.json();
+      displayProducts(produtos);
     } catch (error) {
       console.error('Erro ao buscar dados:', error);
     }
